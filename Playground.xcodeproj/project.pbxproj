@@ -74,6 +74,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04234D4F26DAD1D300F4BDA5 /* war */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = war;
+			sourceTree = "<group>";
+		};
 		0447D4B326DAA935004BB9C6 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +104,7 @@
 		0447D4BE26DAA935004BB9C6 /* Playground */ = {
 			isa = PBXGroup;
 			children = (
+				04234D4F26DAD1D300F4BDA5 /* war */,
 				0447D4BF26DAA935004BB9C6 /* PlaygroundApp.swift */,
 				0447D4C126DAA935004BB9C6 /* ContentView.swift */,
 				0447D4C326DAA936004BB9C6 /* Assets.xcassets */,

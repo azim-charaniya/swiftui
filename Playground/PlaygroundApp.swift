@@ -9,10 +9,28 @@ import SwiftUI
 
 @main
 struct PlaygroundApp: App {
+    
+    @Environment(\.scenePhase) var scenePhase
+    
+    init() {
+        dummyCode()
+    }
     var body: some Scene {
         WindowGroup {
+            Building()
+        }
+        .onChange(of: scenePhase) { phase in
             
-            ContentView()
+            switch phase{
+            case .active:
+                print("Active")
+            case .inactive:
+                print("Inactive")
+            case .background:
+                print("Background")
+            @unknown default:
+                print("New case added by apple")
+            }
         }
     }
 }
