@@ -49,6 +49,7 @@ struct WarView: View {
                 Spacer()
             }
             .foregroundColor(.white)
+            .padding()
         }
     }
 }
