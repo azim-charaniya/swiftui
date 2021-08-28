@@ -9,13 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .bold()
-            .font(.title)
-            .padding()
-            .foregroundColor(.black)
-            .background(Color.green.opacity(0.7))
+        ZStack {
+            Image("BackgroundWall")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio(contentMode: .fill)
+            Text("Hello, world!")
+                .bold()
+                .font(.title)
+                .padding()
+                .foregroundColor(.black)
+                .background(Color.green.opacity(0.7))
             
+            VStack {
+                Spacer()
+                HStack(alignment: .bottom, spacing: 30, content: {
+                    Text("Place Holder 1")
+                    Text("Place Holder 2")
+                    
+                })
+                
+            }
+        }
     }
 }
 
