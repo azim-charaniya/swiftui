@@ -17,7 +17,7 @@ struct PlaygroundApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            Building()
+            WarView()
         }
         .onChange(of: scenePhase) { phase in
             

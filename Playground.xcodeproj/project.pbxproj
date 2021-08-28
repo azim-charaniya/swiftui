@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04234D4E26DACACD00F4BDA5 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04234D4D26DACACD00F4BDA5 /* Building.swift */; };
-		04234D5126DADA7B00F4BDA5 /* WarVire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04234D5026DADA7B00F4BDA5 /* WarVire.swift */; };
+		04234D5126DADA7B00F4BDA5 /* WarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04234D5026DADA7B00F4BDA5 /* WarView.swift */; };
 		04234D5326DADA9600F4BDA5 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04234D5226DADA9600F4BDA5 /* Media.xcassets */; };
 		0447D4C026DAA935004BB9C6 /* PlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447D4BF26DAA935004BB9C6 /* PlaygroundApp.swift */; };
 		0447D4C226DAA935004BB9C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447D4C126DAA935004BB9C6 /* ContentView.swift */; };
@@ -37,7 +37,7 @@
 
 /* Begin PBXFileReference section */
 		04234D4D26DACACD00F4BDA5 /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
-		04234D5026DADA7B00F4BDA5 /* WarVire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarVire.swift; sourceTree = "<group>"; };
+		04234D5026DADA7B00F4BDA5 /* WarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarView.swift; sourceTree = "<group>"; };
 		04234D5226DADA9600F4BDA5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		0447D4BC26DAA935004BB9C6 /* Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0447D4BF26DAA935004BB9C6 /* PlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundApp.swift; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 		04234D4F26DAD1D300F4BDA5 /* war */ = {
 			isa = PBXGroup;
 			children = (
-				04234D5026DADA7B00F4BDA5 /* WarVire.swift */,
+				04234D5026DADA7B00F4BDA5 /* WarView.swift */,
 				04234D5226DADA9600F4BDA5 /* Media.xcassets */,
 			);
 			path = war;
@@ -277,7 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04234D5126DADA7B00F4BDA5 /* WarVire.swift in Sources */,
+				04234D5126DADA7B00F4BDA5 /* WarView.swift in Sources */,
 				0447D4C226DAA935004BB9C6 /* ContentView.swift in Sources */,
 				04234D4E26DACACD00F4BDA5 /* Building.swift in Sources */,
 				0447D4C026DAA935004BB9C6 /* PlaygroundApp.swift in Sources */,

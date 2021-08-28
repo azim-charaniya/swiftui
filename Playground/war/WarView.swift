@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WarVire: View {
+struct WarView: View {
     var body: some View {
         ZStack{
             Image("background")
@@ -55,7 +55,7 @@ struct WarVire: View {
 
 struct WarVire_Previews: PreviewProvider {
     static var previews: some View {
-        WarVire()
+        WarView()
             .previewDevice("iPhone 11")
            
     }
