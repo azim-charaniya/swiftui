@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040ACA0026DBC5A000997CCA /* WarCardState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC9FF26DBC5A000997CCA /* WarCardState.swift */; };
 		04234D4E26DACACD00F4BDA5 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04234D4D26DACACD00F4BDA5 /* Building.swift */; };
 		04234D5126DADA7B00F4BDA5 /* WarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04234D5026DADA7B00F4BDA5 /* WarView.swift */; };
 		04234D5326DADA9600F4BDA5 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04234D5226DADA9600F4BDA5 /* Media.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040AC9FF26DBC5A000997CCA /* WarCardState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarCardState.swift; sourceTree = "<group>"; };
 		04234D4D26DACACD00F4BDA5 /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
 		04234D5026DADA7B00F4BDA5 /* WarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarView.swift; sourceTree = "<group>"; };
 		04234D5226DADA9600F4BDA5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			children = (
 				04234D5026DADA7B00F4BDA5 /* WarView.swift */,
 				04234D5226DADA9600F4BDA5 /* Media.xcassets */,
+				040AC9FF26DBC5A000997CCA /* WarCardState.swift */,
 			);
 			path = war;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				0447D4C226DAA935004BB9C6 /* ContentView.swift in Sources */,
 				04234D4E26DACACD00F4BDA5 /* Building.swift in Sources */,
 				0447D4C026DAA935004BB9C6 /* PlaygroundApp.swift in Sources */,
+				040ACA0026DBC5A000997CCA /* WarCardState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,17 @@
 import SwiftUI
 
 struct WarView: View {
+    
+    private let viewModel = WarViewModel()
+    @State private var state: CardState
+    
+    init() {
+        //TODO: Make this in a observable
+        state = viewModel.getCardState()
+    }
+    
     var body: some View {
+        
         ZStack{
             Image("background")
                 .ignoresSafeArea()
@@ -19,13 +29,19 @@ struct WarView: View {
                 Spacer()
                 HStack{
                     Spacer()
-                    Image("card3")
+                    Image(state.playerCard)
                     Spacer()
-                    Image("card4")
+                    Image(state.cpuCard)
                     Spacer()
                 }
                 Spacer()
-                Image("dealbutton")
+                Button(action: {
+                    print("Deal Button Clicked")
+                    viewModel.dealCards()
+                    state = viewModel.getCardState()
+                }, label: {
+                    Image("dealbutton")
+                })
                 Spacer()
                 HStack{
                     Spacer()
@@ -33,7 +49,7 @@ struct WarView: View {
                         Text("Player")
                             .font(.headline)
                             .padding(.bottom, 10.0)
-                        Text("0")
+                        Text("\(state.playerCurrentScore)")
                             .font(.largeTitle)
                     }
                     Spacer()
@@ -41,7 +57,7 @@ struct WarView: View {
                         Text("CPU")
                             .font(.headline)
                             .padding(.bottom, 10.0)
-                        Text("0")
+                        Text("\(state.cpuCurrentScore)")
                             .font(.largeTitle)
                     }
                     Spacer()
