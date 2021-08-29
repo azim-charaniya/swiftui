@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040AC0E926DBFFCA0084F35F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 040AC0E826DBFFCA0084F35F /* Alamofire */; };
+		040AC0EC26DC0B240084F35F /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC0EB26DC0B240084F35F /* DTO.swift */; };
+		040AC0EF26DC0BB50084F35F /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC0EE26DC0BB50084F35F /* ListViewModel.swift */; };
+		040AC0F226DC0E8E0084F35F /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC0F126DC0E8E0084F35F /* List.swift */; };
 		040ACA0026DBC5A000997CCA /* WarCardState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC9FF26DBC5A000997CCA /* WarCardState.swift */; };
 		040ACA0526DBD77B00997CCA /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ACA0426DBD77B00997CCA /* Networking.swift */; };
 		04234D4E26DACACD00F4BDA5 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04234D4D26DACACD00F4BDA5 /* Building.swift */; };
@@ -38,8 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040AC0EB26DC0B240084F35F /* DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
+		040AC0EE26DC0BB50084F35F /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		040AC0F126DC0E8E0084F35F /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		040AC9FF26DBC5A000997CCA /* WarCardState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarCardState.swift; sourceTree = "<group>"; };
-		040ACA0426DBD77B00997CCA /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Networking.swift; path = Playground/List/Networking/Networking.swift; sourceTree = "<group>"; };
+		040ACA0426DBD77B00997CCA /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		04234D4D26DACACD00F4BDA5 /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
 		04234D5026DADA7B00F4BDA5 /* WarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarView.swift; sourceTree = "<group>"; };
 		04234D5226DADA9600F4BDA5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -62,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040AC0E926DBFFCA0084F35F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,9 +90,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040AC0EA26DC0B0A0084F35F /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				040AC0EB26DC0B240084F35F /* DTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		040AC0ED26DC0B920084F35F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				040AC0EE26DC0BB50084F35F /* ListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		040AC0F026DC0E7C0084F35F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				040AC0F126DC0E8E0084F35F /* List.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		040ACA0226DBD60C00997CCA /* List */ = {
 			isa = PBXGroup;
 			children = (
+				040AC0F026DC0E7C0084F35F /* View */,
+				040AC0ED26DC0B920084F35F /* ViewModel */,
+				040AC0EA26DC0B0A0084F35F /* DTO */,
 				040ACA0326DBD62500997CCA /* Networking */,
 			);
 			path = List;
@@ -93,6 +128,7 @@
 		040ACA0326DBD62500997CCA /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				040ACA0426DBD77B00997CCA /* Networking.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -110,7 +146,6 @@
 		0447D4B326DAA935004BB9C6 = {
 			isa = PBXGroup;
 			children = (
-				040ACA0426DBD77B00997CCA /* Networking.swift */,
 				0447D4BE26DAA935004BB9C6 /* Playground */,
 				0447D4D026DAA936004BB9C6 /* PlaygroundTests */,
 				0447D4DB26DAA936004BB9C6 /* PlaygroundUITests */,
@@ -176,17 +211,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0447D4E126DAA936004BB9C6 /* Build configuration list for PBXNativeTarget "Playground" */;
 			buildPhases = (
-				13BD4F87ECDAB5814BCC629A /* [CP] Check Pods Manifest.lock */,
 				0447D4B826DAA935004BB9C6 /* Sources */,
 				0447D4B926DAA935004BB9C6 /* Frameworks */,
 				0447D4BA26DAA935004BB9C6 /* Resources */,
-				81F3F43396C995FAEF28675C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Playground;
+			packageProductDependencies = (
+				040AC0E826DBFFCA0084F35F /* Alamofire */,
+			);
 			productName = Playground;
 			productReference = 0447D4BC26DAA935004BB9C6 /* Playground.app */;
 			productType = "com.apple.product-type.application";
@@ -195,7 +231,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0447D4E426DAA936004BB9C6 /* Build configuration list for PBXNativeTarget "PlaygroundTests" */;
 			buildPhases = (
-				7F321115E1D10C89848484A4 /* [CP] Check Pods Manifest.lock */,
 				0447D4C926DAA936004BB9C6 /* Sources */,
 				0447D4CA26DAA936004BB9C6 /* Frameworks */,
 				0447D4CB26DAA936004BB9C6 /* Resources */,
@@ -214,11 +249,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0447D4E726DAA936004BB9C6 /* Build configuration list for PBXNativeTarget "PlaygroundUITests" */;
 			buildPhases = (
-				489AC3FCB22785D082C097C4 /* [CP] Check Pods Manifest.lock */,
 				0447D4D426DAA936004BB9C6 /* Sources */,
 				0447D4D526DAA936004BB9C6 /* Frameworks */,
 				0447D4D626DAA936004BB9C6 /* Resources */,
-				8D286DF99A6C2F98E0F1D83B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +294,9 @@
 				Base,
 			);
 			mainGroup = 0447D4B326DAA935004BB9C6;
+			packageReferences = (
+				040AC0E726DBFFCA0084F35F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 0447D4BD26DAA935004BB9C6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -299,109 +335,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		13BD4F87ECDAB5814BCC629A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Playground-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		489AC3FCB22785D082C097C4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Playground-PlaygroundUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7F321115E1D10C89848484A4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PlaygroundTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		81F3F43396C995FAEF28675C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Playground/Pods-Playground-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Playground/Pods-Playground-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Playground/Pods-Playground-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8D286DF99A6C2F98E0F1D83B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Playground-PlaygroundUITests/Pods-Playground-PlaygroundUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Playground-PlaygroundUITests/Pods-Playground-PlaygroundUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Playground-PlaygroundUITests/Pods-Playground-PlaygroundUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		0447D4B826DAA935004BB9C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -413,6 +346,9 @@
 				040ACA0526DBD77B00997CCA /* Networking.swift in Sources */,
 				0447D4C026DAA935004BB9C6 /* PlaygroundApp.swift in Sources */,
 				040ACA0026DBC5A000997CCA /* WarCardState.swift in Sources */,
+				040AC0EF26DC0BB50084F35F /* ListViewModel.swift in Sources */,
+				040AC0EC26DC0B240084F35F /* DTO.swift in Sources */,
+				040AC0F226DC0E8E0084F35F /* List.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -726,6 +662,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		040AC0E726DBFFCA0084F35F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		040AC0E826DBFFCA0084F35F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 040AC0E726DBFFCA0084F35F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0447D4B426DAA935004BB9C6 /* Project object */;
 }
