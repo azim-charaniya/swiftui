@@ -14,6 +14,7 @@ struct PlaygroundApp: App {
     
     init() {
         dummyCode()
+        Networking.get("https://reqres.in/api/users?page=2")
     }
     var body: some Scene {
         WindowGroup {

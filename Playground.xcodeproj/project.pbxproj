@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		040ACA0026DBC5A000997CCA /* WarCardState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC9FF26DBC5A000997CCA /* WarCardState.swift */; };
+		040ACA0526DBD77B00997CCA /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ACA0426DBD77B00997CCA /* Networking.swift */; };
 		04234D4E26DACACD00F4BDA5 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04234D4D26DACACD00F4BDA5 /* Building.swift */; };
 		04234D5126DADA7B00F4BDA5 /* WarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04234D5026DADA7B00F4BDA5 /* WarView.swift */; };
 		04234D5326DADA9600F4BDA5 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04234D5226DADA9600F4BDA5 /* Media.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		040AC9FF26DBC5A000997CCA /* WarCardState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarCardState.swift; sourceTree = "<group>"; };
+		040ACA0426DBD77B00997CCA /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Networking.swift; path = Playground/List/Networking/Networking.swift; sourceTree = "<group>"; };
 		04234D4D26DACACD00F4BDA5 /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
 		04234D5026DADA7B00F4BDA5 /* WarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarView.swift; sourceTree = "<group>"; };
 		04234D5226DADA9600F4BDA5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -80,6 +82,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040ACA0226DBD60C00997CCA /* List */ = {
+			isa = PBXGroup;
+			children = (
+				040ACA0326DBD62500997CCA /* Networking */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		040ACA0326DBD62500997CCA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		04234D4F26DAD1D300F4BDA5 /* war */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +110,7 @@
 		0447D4B326DAA935004BB9C6 = {
 			isa = PBXGroup;
 			children = (
+				040ACA0426DBD77B00997CCA /* Networking.swift */,
 				0447D4BE26DAA935004BB9C6 /* Playground */,
 				0447D4D026DAA936004BB9C6 /* PlaygroundTests */,
 				0447D4DB26DAA936004BB9C6 /* PlaygroundUITests */,
@@ -113,6 +131,7 @@
 		0447D4BE26DAA935004BB9C6 /* Playground */ = {
 			isa = PBXGroup;
 			children = (
+				040ACA0226DBD60C00997CCA /* List */,
 				04234D4F26DAD1D300F4BDA5 /* war */,
 				0447D4BF26DAA935004BB9C6 /* PlaygroundApp.swift */,
 				0447D4C126DAA935004BB9C6 /* ContentView.swift */,
@@ -157,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0447D4E126DAA936004BB9C6 /* Build configuration list for PBXNativeTarget "Playground" */;
 			buildPhases = (
+				13BD4F87ECDAB5814BCC629A /* [CP] Check Pods Manifest.lock */,
 				0447D4B826DAA935004BB9C6 /* Sources */,
 				0447D4B926DAA935004BB9C6 /* Frameworks */,
 				0447D4BA26DAA935004BB9C6 /* Resources */,
+				81F3F43396C995FAEF28675C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0447D4E426DAA936004BB9C6 /* Build configuration list for PBXNativeTarget "PlaygroundTests" */;
 			buildPhases = (
+				7F321115E1D10C89848484A4 /* [CP] Check Pods Manifest.lock */,
 				0447D4C926DAA936004BB9C6 /* Sources */,
 				0447D4CA26DAA936004BB9C6 /* Frameworks */,
 				0447D4CB26DAA936004BB9C6 /* Resources */,
@@ -192,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0447D4E726DAA936004BB9C6 /* Build configuration list for PBXNativeTarget "PlaygroundUITests" */;
 			buildPhases = (
+				489AC3FCB22785D082C097C4 /* [CP] Check Pods Manifest.lock */,
 				0447D4D426DAA936004BB9C6 /* Sources */,
 				0447D4D526DAA936004BB9C6 /* Frameworks */,
 				0447D4D626DAA936004BB9C6 /* Resources */,
+				8D286DF99A6C2F98E0F1D83B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,6 +299,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13BD4F87ECDAB5814BCC629A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Playground-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		489AC3FCB22785D082C097C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Playground-PlaygroundUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F321115E1D10C89848484A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlaygroundTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81F3F43396C995FAEF28675C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Playground/Pods-Playground-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Playground/Pods-Playground-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Playground/Pods-Playground-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D286DF99A6C2F98E0F1D83B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Playground-PlaygroundUITests/Pods-Playground-PlaygroundUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Playground-PlaygroundUITests/Pods-Playground-PlaygroundUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Playground-PlaygroundUITests/Pods-Playground-PlaygroundUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0447D4B826DAA935004BB9C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -283,6 +410,7 @@
 				04234D5126DADA7B00F4BDA5 /* WarView.swift in Sources */,
 				0447D4C226DAA935004BB9C6 /* ContentView.swift in Sources */,
 				04234D4E26DACACD00F4BDA5 /* Building.swift in Sources */,
+				040ACA0526DBD77B00997CCA /* Networking.swift in Sources */,
 				0447D4C026DAA935004BB9C6 /* PlaygroundApp.swift in Sources */,
 				040ACA0026DBC5A000997CCA /* WarCardState.swift in Sources */,
 			);
