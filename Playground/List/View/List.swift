@@ -55,11 +55,17 @@ struct MovieView: View {
                 Text(user.first_name)
                     .font(.title3)
                     .padding(.top, 10.0)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 
-                Text(user.last_name)
-                    .font(.title3)
+                Text("The quick browm fox to jumps over the lazy dog")
+                    .font(.body)
                     .padding(.bottom,10.0)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                
                 Spacer()
+                Label(user.email, systemImage: "envelope")
+                    .font(.body)
+                    .frame(maxWidth: .infinity, alignment: .bottomLeading)
             }
             .frame(maxWidth: .infinity,alignment: .leading)
         }
@@ -74,6 +80,6 @@ struct MovieView: View {
 
 struct List_Previews: PreviewProvider {
     static var previews: some View {
-        MovieView(user: User(id: 0, avatar: "https://reqres.in/img/faces/7-image.jpg", email: "test@test", first_name: "First Name", last_name: "Last Name"))
+        MovieView(user: User(id: 0, avatar: "https://reqres.in/img/faces/7-image.jpg", email: "test@test.com", first_name: "First Name", last_name: "Last Name"))
     }
 }
